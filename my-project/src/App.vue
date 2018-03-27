@@ -3,10 +3,15 @@
     <h1>{{ msg }}</h1>
     <h2>Git Issues</h2>
     <div v-if="repos && repos.length">
-      <ul v-for="repo of repos">
+      <ul v-for="repo of repos" class="list-group">
 
         <li class="list-group-item">{{repo.name}} , {{repo.git_url}} <span class="badge">{{repo.watchers}}</span></li>
 
+      </ul>
+      <ul class="pager">
+        <li><a v-on:click="previous" id="pagination" class="previous round">&#8249;</a></li>
+        <li> page {{page}}</li>
+        <li><a v-on:click="next" id="pagination" class="next round">&#8250;</a></li>
       </ul>
     </div>
 
@@ -22,7 +27,7 @@
       return {
         msg: 'Welcome to My Test Proposition',
         repos: [],
-        per_page: 10,
+        per_page: 3,
         page: 1,
         pages: 5,
         total: 0,
