@@ -2,7 +2,7 @@
   <div id="app">
     <h1>{{ msg }}</h1>
     <h2>Git Issues</h2>
-    <div v-if="repos && repos.length">
+    <div v-if="repos && repos.length" class="container new-discussion-timeline experiment-repo-nav">
       <ul v-for="repo of repos" class="list-group">
 
         <li class="list-group-item">{{repo.name}} , {{repo.git_url}} <span class="badge">{{repo.watchers}}</span></li>
