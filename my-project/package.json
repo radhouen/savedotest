@@ -28,6 +28,8 @@
     "css-loader": "^0.28.7",
     "file-loader": "^1.1.4",
     "mocha": "^5.0.5",
+    "should": "^13.2.1",
+    "supertest": "^3.0.0",
     "vue-loader": "^13.0.5",
     "vue-template-compiler": "^2.4.4",
     "webpack": "^3.6.0",
