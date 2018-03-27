@@ -25,3 +25,18 @@ npm install axios --save
 ```sh
 npm install --save-dev mocha
 ```
+### run test
+
+```sh
+npm test
+```
+
+### install should
+
+```sh
+npm install --save-dev should
+```
+### install supertest
+```sh
+npm install --save-dev supertest
+```
